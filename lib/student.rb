@@ -30,7 +30,7 @@ class Student
 
   end
 
-  def self.new_from_db(arg)
+  def self.new_from_db(array)
 
   end
 
