@@ -33,7 +33,6 @@ class Student
   def self.new_from_db(row)
     binding.pry
     #self.new(row[1], row[2], row[0])
-    binding.pry
   end
 
   def self.find_by_name(name)
