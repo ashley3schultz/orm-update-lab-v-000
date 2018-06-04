@@ -37,8 +37,8 @@ class Student
   end
 
   def self.find_by_name(name)
-    DB[:conn].execute("SELECT name FROM students WHERE name = ?",name)
-
+    student = DB[:conn].execute("SELECT name FROM students WHERE name = ?",name)
+    student
   end
 
   def update
