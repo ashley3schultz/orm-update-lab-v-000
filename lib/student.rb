@@ -42,7 +42,7 @@ class Student
   end
 
   def update
-    row = find_by_name(self.name)
+    row = Student.find_by_name(self.name)
     DB[:conn].execute("UPDATE students SET name = ? grade = ? WHERE id = ?)",row.name, row.grade, row.id)
   end
   # Remember, you can access your database connection anywhere in this class
