@@ -34,7 +34,7 @@ class Student
 
   end
 
-  def self.find_by_name(arg)
+  def self.find_by_name(name)
 
   end
 
