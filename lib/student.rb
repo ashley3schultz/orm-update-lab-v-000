@@ -27,7 +27,7 @@ class Student
   end
 
   def self.create(name, grade)
-    DB[:conn].execute("INSERT INTO students (name, grade) VALUES (?, ?)",self.name, self.grade)
+    DB[:conn].execute("INSERT INTO students (name, grade) VALUES (?, ?)",name, grade)
   end
 
   def self.new_from_db(array)
